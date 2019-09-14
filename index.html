@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <LINK rel=stylesheet type="text/css" href=“css/css.css">
-    <title></title>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <LINK rel=stylesheet type="text/css" href="css/css.css">
+		<title>Games of Chance</title>
+	</head>
 
-  </head>
     <body>
-	<header>
-    		<h1></h1>
-	</header>
-	<main>
-	</main
-  
-        <script src=“js/js.js"></script>
-    <footer>
-            Hosted by <a href="https://www.gitlab.com">GitLab.</a> <br>Part of the <a href="https://knmarvel.gitlab.io/KaNoLearns">KaNoLearns</a> project.
-    </footer>
+		<header>
+	    		<h1>Games of Chance</h1>
+		</header>
+		<main>
+			<div class="game">
+				<h2>Rock, Paper, Scissors</h2>
+				<div id="rps">
+					<h3>How to Play:</h3>
+					<p><b>Rock smashes Scissors. Paper covers Rock. Scissors cut Paper.</b></p>
+					<p>You'll choose one of three elements: rock, paper, or scissors. I'll pick one of the three elements randomly. We'll see who wins! </p>
+					<div id="rpsOut">
+						<div id = "rpsInput" class="rpsClass">
+							<div id="rpsYourChoice">&nbsp;</div>
+							<div id="rpsForm">
+								<form>
+									<input type="radio" class="rockpaperscissorsradio" name="rps" value="ROCK"><label for="ROCK">ROCK</label><br>
+									<input type="radio" class="rockpaperscissorsradio" name="rps" value="PAPER"><label for="PAPER">PAPER</label><br>
+									<input type="radio" class="rockpaperscissorsradio" name="rps" value="SCISSORS"><label for="SCISSORS">SCISSORS</label><br>
+									<input type="button" class="submit" id="rpsShoot" value="SHOOT">
+								</form>
+							</div>
+						</div>
+						<div id = "winnersCircle" class = "rpsClass"></div>
+						<div id = "rpsOutput" class="rpsClass">
+							<div id="rpsMyChoice"></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="game">
+				<h2>Magic Eight Ball</h2>
+				<div id="m8b">
+					<h3>How to Play:</h3>
+					<p>Ask me a yes or no question, and let me give you vague advice based on random chance about whether or not you should pursue that plan.</p>
+					<div id="m8binput">
+						<textarea rows="8" cols = "30"></textarea>
+						<input type="button" class = "submit" id="m8bshoot" value="GIVE RANDOM ADVICE">
+					</div>
+					<div id ="m8boutpput"></div>
+				</div>
+			</div>
+			<div class="game">
+				<h2>Slot Machine</h2>
+				<div id="slotMachine">
+					<h3>How to Play:</h3>
+					<p>Click the lever and hope you get three of a kind!</p>
+				</div>
+				<div id="slotMachineDisplay">
+					<div id="slotOne" class="slots"></div> 
+					<div id="slotTwo" class="slots"></div> 
+					<div id="slotThree" class="slots"></div>
+				</div>
+				<div id="slotLeverPlace">
+					<input type="button" id="slotLeverButton" value="PULL THE LEVER, KRONK!">
+				</div>
+				<div id="slotMachineResults"></div>
+			</div>
+			<div class="game">
+				<h2>Word Search</h2>
+				<div id="wordSearch">
+					<h3>How to Play:</h3>
+					<p>There are words hidden in the array of letters below. Find them.</p>
+					<div id="wordSearchPlace">
+						<div id="wordSearchArray">
+
+						</div>
+						<div id="foundWords">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	  
+	        <script src="js/js.js"></script>
+	    <footer>
+	            Hosted by <a href="https://www.gitlab.com">GitLab.</a> <br><a href="https://cdn.pixabay.com/photo/2013/07/13/09/51/rock-paper-scissors-156171_640.png">Rock/paper/scissors image</a> seems to be uncredited on Pixabay.com. Part of the <a href="https://knmarvel.gitlab.io/KaNoLearns">KaNoLearns</a> project.
+	    </footer>
   </body>
+
 </html>
